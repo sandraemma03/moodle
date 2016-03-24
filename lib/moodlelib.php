@@ -6417,7 +6417,7 @@ function valid_uploaded_file($newfile) {
 function get_max_upload_file_size($sitebytes=0, $coursebytes=0, $modulebytes=0) {
 
     if (! $filesize = ini_get('upload_max_filesize')) {
-        $filesize = '5M';
+        $filesize = '500M';
     }
     $minimumsize = get_real_size($filesize);
 
